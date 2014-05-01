@@ -3,3 +3,4 @@ safe: true
 lsi: false
 pygments: true
 exclude: [ README.md ]
+markdown: redcarpet
