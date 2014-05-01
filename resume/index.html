@@ -23,18 +23,11 @@
     #resume-header h1 {
         border-bottom: 2px solid #000066;
         color: #000066;
-        font-size: 2.0em;
+        font-size: 2.25em;
         font-style: italic;
         font-weight: bold;
         margin: 0 3pt 0 3pt;
         padding: 0 0 3pt 0;
-    }
-
-    #resume-header h2 {
-        color: #000066;
-        font-size: 1.1em;
-        font-weight: bold;
-        margin: 3pt;
     }
 
     #resume-header #links {
@@ -55,16 +48,12 @@
         text-decoration: none;
     }
 
-    #resume-body {
-        clear: both;
-    }
-
-    #resume-body h3 {
+    #resume-body h2 {
         border-bottom: 2px solid #000066;
         color: #000066;
         font-size: 1.2em;
-        margin: 12pt 0 6pt 0;
-        padding: 0 0 0 3pt;
+        margin: 0.75em 0 0.5em 0;
+        padding: 0 0 0 0.25em;
     }
 
     #summary-of-qualifications {
@@ -84,32 +73,56 @@
         width: 100px;
     }
 
-    #resume-body ul {
-        margin: 3pt 0 3pt 0;
-        padding-top: 3pt;
+    .job, .school, .project {
+        padding-top: 2.0em;
+        position: relative;
     }
 
-    #resume-body ul li {
-        margin: 0 0 3pt 0;
+    .job h3, .school h3, .project h3,
+    .job h4, .school h4, .project h4,
+    .job h5, .school h5, .project h5,
+    .job h6, .school h6, .project h6 {
+        font-size: 1.1em;
+        font-weight: normal;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        top: 0;
     }
 
-    #resume-body div.sub-heading {
-        clear: both;
-        font-size: 1.05em;
-        text-indent: -9pt;
-        margin: 9pt 0 0 18pt;
+    .job h3, .school h3, .project h3,
+    .job h4, .school h4, .project h4 {
+        left: 0.5em;
     }
 
-    #resume-body span.resume-date {
-        float: right;
-        font-size: 0.9em;
-        font-style: italic;
+    .job h5, .school h5, .project h5,
+    .job h6, .school h6, .project h6 {
+        font-size: 1.0em;
         text-align: right;
-        text-indent: 0;
+        font-style: italic;
+        right: 0.5em;
     }
 
-    #other-acheievements {
-        padding-top: 3pt;
+    .job h4, .school h4, .project h4,
+    .job h6, .school h6, .project h6 {
+        top: 1.4em;
+    }
+
+    .job h3, .school h3, .project h3 {
+        font-weight: bold;
+    }
+
+    .job ul li, .school ul li, .project ul li {
+        padding-top: 0.25em;
+    }
+
+    #other-acheievements ul {
+        margin: 0.25em 0 0.25em 0;
+        padding-top: 0.25em;
+    }
+
+    #other-acheievements ul li {
+        margin: 0 0 0.25em 0;
     }
 
     @media screen and (min-width: 768px) {
@@ -156,7 +169,7 @@
   
     <div id="resume-body">
 
-        <h3>SUMMARY OF QUALIFICATIONS</h3>
+        <h2>SUMMARY OF QUALIFICATIONS</h2>
 
         <div id="summary-of-qualifications">
 
@@ -170,148 +183,244 @@
 
         </div>
 
-        <h3>PROFESSIONAL EXPERIENCE</h3>
+        <h2>PROFESSIONAL EXPERIENCE</h2>
 
-        <div class="sub-heading"><b>Software Development Engineer</b> &mdash; Amazon Web Services Inc.<span class="resume-date">Sept 2013 &ndash; Dec 2013</span></div>
+        <div class="job">
 
-        <ul>
+            <h3>Amazon Web Services Inc.</h3>
 
-            <li>Responsible for the design and implementation of a new feature for Amazon CloudFront</li>
+            <h4>Software Development Engineer</h4>
 
-            <li>Interviewed customers to understand their use case and gather feedback relevant to this feature</li>
+            <h5>Sept 2013 &ndash; Dec 2013</h5>
 
-            <li>Solved distributed systems problems and challenges involving the scalability of CloudFront</li>
+            <h6>Seattle, Washington</h6>
 
-        </ul>
+            <ul>
+                <li>Responsible for the design and implementation of a new feature for Amazon CloudFront</li>
 
-        <div class="sub-heading"><b>Solutions Engineer</b> &mdash; Xtreme Labs Inc. (Acquired by Pivotal Labs Inc.)<span class="resume-date">Jan 2013 &ndash; Apr 2013</span></div>
+                <li>Interviewed customers to understand their use case and gather feedback relevant to this feature</li>
 
-        <ul>
+                <li>Solved distributed systems problems and challenges involving the scalability of CloudFront</li>
+            </ul>
 
-            <li>Assisted the sales team in gathering software requirements from clients during sales calls and meetings</li>
+        </div>
 
-            <li>Worked alongside product managers to define potential products and solutions to meet client needs</li>
+        <div class="job">
 
-            <li>Investigated various platforms and technologies in order to propose the optimal technical solution</li>
+            <h3>Xtreme Labs Inc. (Acquired by Pivotal Labs Inc.)</h3>
 
-            <li>Worked with product managers and senior engineers to create project plans and scope level of effort to successfully execute and deliver the proposed solution</li>
+            <h4>Solutions Engineer</h4>
 
-        </ul>
+            <h5>Jan 2013 &ndash; Apr 2013</h5>
 
-        <div class="sub-heading"><b>Android Application Engineer</b> &mdash; Glooko Inc.<span class="resume-date">May 2012 &ndash; Aug 2012</span></div>
-        
-        <ul>
-        
-            <li>Developed software for an Android accessory to communicate with blood glucose meters</li>
-            
-            <li>Practiced leadership skills by co-ordinating a team</li>
-            
-        </ul>
+            <h6>Toronto, Ontario</h6>
 
-        <div class="sub-heading"><b>Agile Mobile Engineer</b> &mdash;  Xtreme Labs Inc. (Acquired by Pivotal Labs Inc.)<span class="resume-date">Sept 2011 &ndash; Dec 2011</span></div>
-        
-        <ul>
-        
-            <li>Developed mobile applications on Android and iOS platforms</li>
-            
-            <li>Enhanced user experience through rapid prototyping and testing</li>
-            
-            <li>Participated in a heavily feedback driven Agile process with a small team</li>
-            
-        </ul>
+            <ul>
 
-        <div class="sub-heading"><b>Software Engineer</b> &mdash; General Dynamics Ltd.<span class="resume-date">Jan 2011 &ndash; Apr 2011</span></div>
-        
-        <ul>
+                <li>Assisted the sales team in gathering software requirements from clients during sales calls and meetings</li>
 
-            <li>Developed a software prototype for an embedded platform using C</li>
+                <li>Worked alongside product managers to define potential products and solutions to meet client needs</li>
 
-            <li>Designed test procedures to verify software against requirements</li>
+                <li>Investigated various platforms and technologies in order to propose the optimal technical solution</li>
 
-        </ul>
-            
-        <div class="sub-heading"><b>Software/QA Engineer</b> &mdash; Tangam Gaming Inc.<span class="resume-date">May 2010 &ndash; Aug 2010</span></div>
+                <li>Worked with product managers and senior engineers to create project plans and scope level of effort to successfully execute and deliver the proposed solution</li>
 
-        <ul>
-            <li>Practiced Agile programming methods including test driven development as a member of a team</li>
-              
-            <li>Performed development and bug-fixing tasks for an ASP.Net web application using C#</li>
+            </ul>
 
-            <li>Developed automated user interface tests using Selenium and business logic tests using NUnit</li>
-        </ul>
+        </div>
 
-        <div class="sub-heading"><b>Database Developer</b> &mdash; Human Resources and Social Development Canada<span class="resume-date">Aug 2009 &ndash; Dec 2009</span></div>
+        <div class="job">
 
-        <ul>
-            <li>Responsible for creating an Oracle relational database schema for a statistical reporting application</li>
+            <h3>Glooko Inc.</h3>
 
-            <li>Created SQL procedures to retrieve and manipulate data</li>
+            <h4>Android Application Engineer</h4>
 
-        </ul>
+            <h5>May 2012 &ndash; Aug 2012</h5>
 
-        <div class="sub-heading"><b>User Interface Prototype Designer</b> &mdash; Cognos Inc. (Acquired by IBM)<span class="resume-date">Feb 2007 &ndash; Aug 2007</span></div>
+            <h6>Palo Alto, California</h6>
 
-        <ul>
-            <li>Designed a user interface prototype for a web application using dynamic HTML, CSS, and JavaScript</li>
-        </ul>
+            <ul>
+
+                <li>Developed software for an Android accessory to communicate with blood glucose meters</li>
+
+                <li>Practiced leadership skills by co-ordinating a team</li>
+
+            </ul>
+
+        </div>
+
+        <div class="job">
+
+            <h3>Xtreme Labs Inc. (Acquired by Pivotal Labs Inc.)</h3>
+
+            <h4>Agile Mobile Engineer</h4>
+
+            <h5>Sept 2011 &ndash; Dec 2011</h5>
+
+            <h6>Toronto, Ontario</h6>
+
+            <ul>
+
+                <li>Developed mobile applications on Android and iOS platforms</li>
+
+                <li>Enhanced user experience through rapid prototyping and testing</li>
+
+                <li>Participated in a heavily feedback driven Agile process with a small team</li>
+
+            </ul>
+
+        </div>
+
+        <div class="job">
+
+            <h3>General Dynamics Ltd.</h3>
+
+            <h4>Software Engineer</h4>
+
+            <h5>Jan 2011 &ndash; Apr 2011</h5>
+
+            <h6>Ottawa, Ontario</h6>
+
+            <ul>
+
+                <li>Developed a software prototype for an embedded platform using C</li>
+
+                <li>Designed test procedures to verify software against requirements</li>
+
+            </ul>
+
+        </div>
+
+        <div class="job">
+
+            <h3>Tangam Gaming Inc.</h3>
+
+            <h4>Software/QA Engineer</h4>
+
+            <h5>May 2010 &ndash; Aug 2010</h5>
+
+            <h6>Waterloo, Ontario</h6>
+
+            <ul>
+
+                <li>Practiced Agile programming methods including test driven development as a member of a team</li>
+
+                <li>Performed development and bug-fixing tasks for an ASP.Net web application using C#</li>
+
+                <li>Developed automated user interface tests using Selenium and business logic tests using NUnit</li>
+
+            </ul>
+
+        </div>
+
+        <div class="job">
+
+            <h3>Human Resources and Social Development Canada</h3>
+
+            <h4>Database Developer</h4>
+
+            <h5>Aug 2009 &ndash; Dec 2009</h5>
+
+            <h6>Ottawa, Ontario</h6>
+
+            <ul>
+
+                <li>Responsible for creating an Oracle relational database schema for a statistical reporting application</li>
+
+                <li>Created SQL procedures to retrieve and manipulate data</li>
+
+            </ul>
+
+        </div>
 
         <div class="page-break"></div>
 
-        <h3>EDUCATION</h3>
+        <h2>EDUCATION</h2>
 
-        <div class="sub-heading"><b>Honours Bachelor of Computer Science with Business Option</b><span class="resume-date">Sept 2008 &ndash; Apr 2014 (expected)</span></div>
+        <div class="school">
 
-        <ul>
+            <h3>Honours Bachelor of Computer Science with Business Option</h3>
 
-            <li>University of Waterloo, Waterloo, Ontario</li>
+            <h4>University of Waterloo</h4>
 
-        </ul>
+            <h5>Sept 2008 &ndash; Apr 2014 (expected)</h5>
 
-        <h3>PERSONAL PROJECTS</h3>
+            <h6>Waterloo, Ontario</h6>
 
-        <div class="sub-heading"><b>Tea Shop Supply Ordering System Prototype</b> &mdash; Human Computer Interaction (CS 449)<span class="resume-date">May 2013 - Aug 2013</span></div>
+            <ul>
+                <li>With Co-operative Education</li>
+            </ul>
 
-        <ul>
+        </div>
 
-            <li>Used contextual inquiry and master-apprentice interview methods to identify work practice breakdowns of a tea shop</li>
+        <h2>PERSONAL PROJECTS</h2>
 
-            <li>Created flow, sequence, artifact, and cultural models to analyze data collected and re-design the work flow</li>
+        <div class="project">
 
-            <li>Iterated on a low fidelity paper prototype using feedback from the tea shop employee, classmates and professor</li>
+            <h3>Tea Shop Supply Ordering System Prototype</h3>
 
-            <li>Collaborated with a team to create a high fidelity prototype using jQuery, Bootstrap and Font-Awesome.</li>
+            <h4>Human Computer Interaction (CS 449)</h4>
 
-        </ul>
+            <h5>May 2013 - Aug 2013</h5>
 
-        <div class="sub-heading"><b>Art Street</b> &mdash; LinkedIn Hackathon Project<span class="resume-date">Feb 2013</span></div>
+            <ul>
 
-        <ul>
+                <li>Used contextual inquiry and master-apprentice interview methods to identify work practice breakdowns of a tea shop</li>
 
-            <li>Worked as part of a team to develop an iOS application supported by a PHP backend for discovering urban art (graffiti, statues, sculptures, etc.)</li>
+                <li>Created flow, sequence, artifact, and cultural models to analyze data collected and re-design the work flow</li>
 
-            <li>Initial dataset was scraped from the web, with the addition of a crowd-sourcing feature to input data with moderator approval</li>
+                <li>Iterated on a low fidelity paper prototype using feedback from the tea shop employee, classmates and professor</li>
 
-            <li>Completed a product in a short time frame (24 hours)</li>
+                <li>Collaborated with a team to create a high fidelity prototype using jQuery, Bootstrap and Font-Awesome.</li>
 
-            <li>Created a database schema, wrote SQL queries, and exposed the data through a RESTful JSON API</li>
+            </ul>
 
-        </ul>
+        </div>
 
-        <div class="sub-heading"><b>Device Wall Memory Game</b> &mdash; Xtreme Labs Device Wall<span class="resume-date">Apr 2013</span></div>
+        <div class="project">
 
-        <ul>
+            <h3>Art Street</h3>
 
-            <li>Developed a memory game to work across multiple Android devices with each device representing a subset of cards in the game</li>
+            <h4>LinkedIn Hackathon Project</h4>
 
-            <li>Devices communicated through the AMQP protocol to subscribe to topics published by a RabbitMQ server</li>
+            <h5>Feb 2013</h5>
 
-            <li>Game co-ordinated through a central server that would publish topics following a custom protocol</li>
+            <ul>
 
-            <li>Gained experience with Android Services</li>
+                <li>Worked as part of a team to develop an iOS application supported by a PHP backend for discovering urban art (graffiti, statues, sculptures, etc.)</li>
 
-        </ul>
+                <li>Initial dataset was scraped from the web, with the addition of a crowd-sourcing feature to input data with moderator approval</li>
 
-        <h3>OTHER ACHIEVEMENTS</h3>
+                <li>Completed a product in a short time frame (24 hours)</li>
+
+                <li>Created a database schema, wrote SQL queries, and exposed the data through a RESTful JSON API</li>
+
+            </ul>
+
+        </div>
+
+        <div class="project">
+
+            <h3>Device Wall Memory Game</h3>
+
+            <h4>Xtreme Labs Device Wall for FITC 2013 Conference</h4>
+
+            <h5>Apr 2013</h5>
+
+            <ul>
+
+                <li>Developed a memory game to work across multiple Android devices with each device representing a subset of cards in the game</li>
+
+                <li>Devices communicated through the AMQP protocol to subscribe to topics published by a RabbitMQ server</li>
+
+                <li>Game co-ordinated through a central server that would publish topics following a custom protocol</li>
+
+                <li>Gained experience with Android Services</li>
+
+            </ul>
+        </div>
+
+        <h2>OTHER ACHIEVEMENTS</h2>
 
         <ul id="other-acheievements">
 
